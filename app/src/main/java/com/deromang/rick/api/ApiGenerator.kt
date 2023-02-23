@@ -1,4 +1,4 @@
-package com.example.application.api
+package com.deromang.rick.api
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

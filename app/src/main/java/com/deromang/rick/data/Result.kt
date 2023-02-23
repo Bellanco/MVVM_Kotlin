@@ -1,4 +1,4 @@
-package com.example.application.data
+package com.deromang.rick.data
 
 /**
  * Authentication result : success (user details) or error message.

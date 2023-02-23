@@ -1,12 +1,13 @@
-package com.example.application.ui.first
+package com.deromang.rick.ui.first
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.application.data.Repository
-import com.example.application.data.Result
-import com.example.application.model.CharactersResponseModel
+import com.deromang.rick.data.Repository
+import com.deromang.rick.data.Result
+import com.deromang.rick.model.CharactersResponseModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class FirstViewModel : ViewModel() {
@@ -18,10 +19,11 @@ class FirstViewModel : ViewModel() {
 
         val repository = Repository()
 
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
+
             val responseModel = repository.getCharacters()
 
-            _getCharacterResult.value = Result(success = responseModel.body())
+            _getCharacterResult.postValue(Result(success = responseModel.body()))
         }
     }
 

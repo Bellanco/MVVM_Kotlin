@@ -1,4 +1,4 @@
-package com.example.application.ui.first
+package com.deromang.rick.ui.first
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,10 +9,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.application.databinding.FragmentFirstBinding
-import com.example.application.model.CharacterModel
-import com.example.application.ui.first.adapter.FirstAdapter
-import com.example.application.ui.first.adapter.FirstViewHolder
+import com.deromang.rick.model.CharacterModel
+import com.deromang.rick.ui.first.adapter.FirstAdapter
+import com.deromang.rick.ui.first.adapter.FirstViewHolder
+import com.deromang.rick.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
 

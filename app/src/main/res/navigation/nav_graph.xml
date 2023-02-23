@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.application.ui.first.FirstFragment"
+        android:name="com.deromang.rick.ui.first.FirstFragment"
         android:label="@string/title_label"
         tools:layout="@layout/fragment_first">
         <action
@@ -16,21 +16,20 @@
             <argument
                 android:name="model"
                 android:defaultValue="@null"
-                app:argType="com.example.application.model.CharacterModel"
+                app:argType="com.deromang.rick.model.CharacterModel"
                 app:nullable="true" />
         </action>
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.application.ui.second.SecondFragment"
+        android:name="com.deromang.rick.ui.second.SecondFragment"
         android:label="@string/details"
         tools:layout="@layout/second_fragment">
         <argument
             android:name="model"
             android:defaultValue="@null"
-            app:argType="com.example.application.model.CharacterModel"
+            app:argType="com.deromang.rick.model.CharacterModel"
             app:nullable="true" />
     </fragment>
-
 
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.application.ui
+package com.deromang.rick.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.application.R
-import com.example.application.databinding.ActivityMainBinding
+import com.deromang.rick.R
+import com.deromang.rick.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 

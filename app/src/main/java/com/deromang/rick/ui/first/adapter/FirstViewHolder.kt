@@ -1,12 +1,12 @@
-package com.example.application.ui.first.adapter
+package com.deromang.rick.ui.first.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.application.databinding.RowMainBinding
-import com.example.application.model.CharacterModel
-import com.example.application.util.setImageUrl
+import com.deromang.rick.databinding.RowMainBinding
+import com.deromang.rick.model.CharacterModel
+import com.deromang.rick.util.setImageUrl
 
 class FirstViewHolder private constructor(
     private val binding: RowMainBinding,

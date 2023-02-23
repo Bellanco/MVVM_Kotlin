@@ -1,7 +1,6 @@
-package com.example.application.api
+package com.deromang.rick.api
 
-import com.example.application.model.CharactersResponseModel
-import retrofit2.Call
+import com.deromang.rick.model.CharactersResponseModel
 import retrofit2.Response
 import retrofit2.http.GET
 

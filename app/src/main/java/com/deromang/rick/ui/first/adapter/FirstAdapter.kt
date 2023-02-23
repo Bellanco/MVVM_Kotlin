@@ -1,9 +1,9 @@
-package com.example.application.ui.first.adapter
+package com.deromang.rick.ui.first.adapter
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.application.model.CharacterModel
+import com.deromang.rick.model.CharacterModel
 
 class FirstAdapter(
     private val modelList: MutableList<CharacterModel>,

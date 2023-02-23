@@ -1,4 +1,4 @@
-package com.example.application
+package com.deromang.rick
 
 import android.app.Application
 import androidx.lifecycle.LifecycleObserver
