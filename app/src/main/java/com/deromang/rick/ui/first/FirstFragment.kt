@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -29,7 +30,6 @@ class FirstFragment : Fragment() {
         setupObservables(binding)
 
         return binding.root
-
     }
 
     private fun setupObservables(binding: FragmentFirstBinding) {
@@ -37,6 +37,9 @@ class FirstFragment : Fragment() {
         viewModel.getCharacterResult.observe(viewLifecycleOwner) { result ->
             result.success?.let { model ->
                 setupAdapterCharacters(binding, model.results)
+            }
+            result.error?.let { error ->
+                Toast.makeText(requireContext(), getString(error), Toast.LENGTH_SHORT).show()
             }
         }
     }

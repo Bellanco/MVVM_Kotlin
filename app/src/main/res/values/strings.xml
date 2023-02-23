@@ -11,4 +11,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="label_location">Localización: %s</string>
     <string name="label_share_url">Compartir Url</string>
+    <string name="label_error_request">Se ha producido un error en nuestros servidores.</string>
 </resources>

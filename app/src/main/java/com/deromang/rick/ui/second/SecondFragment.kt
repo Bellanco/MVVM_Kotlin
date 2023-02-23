@@ -15,11 +15,7 @@ import com.deromang.rick.util.share
 
 class SecondFragment : Fragment() {
 
-    val args: SecondFragmentArgs by navArgs()
-
-    companion object {
-        fun newInstance() = SecondFragment()
-    }
+    private val args: SecondFragmentArgs by navArgs()
 
     private lateinit var viewModel: SecondViewModel
 

@@ -6,7 +6,6 @@ import androidx.lifecycle.ProcessLifecycleOwner
 
 class App : Application(), LifecycleObserver {
 
-
     override fun onCreate() {
         super.onCreate()
 
@@ -18,12 +17,6 @@ class App : Application(), LifecycleObserver {
 
     companion object {
         private var instance: App? = null
-        fun getInstance(): App? {
-            if (instance == null) {
-                throw Error()
-            }
-            return instance
-        }
     }
 
 
