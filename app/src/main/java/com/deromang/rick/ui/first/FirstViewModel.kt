@@ -23,14 +23,14 @@ class FirstViewModel : ViewModel() {
         _getCharacterResult.value = Result(error = R.string.label_error_request)
     }
 
-    fun getCharacters() {
+    fun getCharacters(text: String? = null, state: String? = null) {
 
         val repository = Repository()
 
         viewModelScope.launch(exception) {
 
             withContext(Dispatchers.IO) {
-                val responseModel = repository.getCharacters()
+                val responseModel = repository.getCharacters(text, state)
 
                 if (responseModel.isSuccessful) {
                     _getCharacterResult.postValue(Result(success = responseModel.body()))

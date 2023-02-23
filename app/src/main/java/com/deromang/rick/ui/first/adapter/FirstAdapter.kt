@@ -6,11 +6,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.deromang.rick.model.CharacterModel
 
 class FirstAdapter(
-    private val modelList: MutableList<CharacterModel>,
     private val context: Context,
     private val listener: FirstViewHolder.OnItemClickListener
 ) :
     RecyclerView.Adapter<FirstViewHolder>() {
+
+    private val modelList: MutableList<CharacterModel> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FirstViewHolder =
         FirstViewHolder.from(parent, listener)
@@ -20,5 +21,11 @@ class FirstAdapter(
     }
 
     override fun getItemCount(): Int = modelList.size
+
+    fun addAll(models: MutableList<CharacterModel>){
+        modelList.clear()
+        modelList.addAll(models)
+        notifyDataSetChanged()
+    }
 
 }

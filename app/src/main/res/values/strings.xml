@@ -1,15 +1,21 @@
 <resources>
-    <string name="app_name">Application</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Rick y Morty</string>
+    <string name="action_settings">Ajustes</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="title_label">Rick y Morty</string>
     <string name="details">Detalles</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="label_location">Localización: %s</string>
     <string name="label_share_url">Compartir Url</string>
     <string name="label_error_request">Se ha producido un error en nuestros servidores.</string>
+    <string name="label_shared">Compartir</string>
+    <string name="label_image">Imagen</string>
+    <string name="label_name">Nombre</string>
+    <string name="label_alive">Vivo</string>
+    <string name="label_dead">Muerto</string>
+    <string name="label_unknown">Desconocido</string>
+    <string name="filter">Filtrar</string>
 </resources>
